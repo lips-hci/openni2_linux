@@ -82,9 +82,17 @@ git clone https://github.com/lips-hci/openni2_linux.git LIPS_Sample
 #### Build Samples ####
 ##### Ni2Recorder #####
 ```
-cd LIPS_Sample\Ni2Recorder
+cd LIPS_Sample/Ni2Recorder
 cp -r ../../Redist/* .
 cp ../../Tools/OpenNI2/Drivers/libmodule-lips2.so OpenNI2/Drivers/
+CXX=g++ make
+```
+
+##### Ni2SimpleViewer #####
+```
+cd LIPS_Sample/Ni2SimpleViewer
+cp -r ../../Redist/* .
+cp ../../Tools/OpenNI2/Drivers/libmodule-lips2.so OpenNi2/Drivers/
 CXX=g++ make
 ```
 
