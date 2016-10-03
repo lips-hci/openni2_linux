@@ -55,6 +55,8 @@ sudo apt-get install libusb-1.0-0
 
 #### Install LIPS 3D depth camera SDK ####
 
+* Download SDK from [LIPS SDK] (http://www.lips-hci.com/products/sdk/)
+
 * Extract the tarball of LIPS 3D depth camera SDK
 
 * Enter the SDK folder and install the SDK with administrator permission
