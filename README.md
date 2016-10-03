@@ -74,7 +74,7 @@ sudo apt-get install git-core
 Clone the project into the SDK folder.
 
 ```
-git clone git@bitbucket.org:alenchen/openni2_linux.git LIPS_Sample
+git clone https://github.com/lips-hci/openni2_linux.git LIPS_Sample
 ```
 
 #### Build Samples ####
