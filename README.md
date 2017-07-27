@@ -92,7 +92,7 @@ CXX=g++ make
 ```
 cd LIPS_Sample/Ni2SimpleViewer
 cp -r ../../Redist/* .
-cp ../../Tools/OpenNI2/Drivers/libmodule-lips2.so OpenNi2/Drivers/
+cp ../../Tools/OpenNI2/Drivers/libmodule-lips2.so OpenNI2/Drivers/
 CXX=g++ make
 ```
 
