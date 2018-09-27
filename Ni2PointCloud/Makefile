@@ -1,6 +1,6 @@
 PWD = $(shell pwd)
 SRC = ./Ni2PointCloud.cpp
-CPPFLAGS = -std=c++11 -g -Dlinux -I/usr/include/openni2
+CPPFLAGS = -std=c++11 -g -Dlinux -I../../Include
 LDFLAGS = -L$(PWD) -Wl,-rpath ./ -lOpenNI2
 
 # OpenCV
