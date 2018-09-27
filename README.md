@@ -96,6 +96,14 @@ cp ../../Tools/OpenNI2/Drivers/libmodule-lips2.so OpenNI2/Drivers/
 CXX=g++ make
 ```
 
+##### Ni2PointCloud #####
+```
+cd LIPS_Sample/Ni2PointCloud
+cp -r ../../Redist/* .
+cp ../../Tools/OpenNI2/Drivers/libmodule-lips2.so OpenNI2/Drivers/
+CXX=g++ make
+```
+
 #### Build your own application ####
 You can base the samples we provided to develop your own application. What you need to know are:
 
