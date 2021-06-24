@@ -5,6 +5,7 @@
 //
 #include <OpenNI.h>
 #include <iostream>
+#include "LIPSNICustomProperty.h"
 
 using namespace std;
 using namespace openni;
@@ -14,35 +15,6 @@ using namespace openni;
 #ifdef WIN32
 #define sprintf sprintf_s
 #endif
-
-enum
-{
-    // Camera
-    LIPS_STREAM_PROPERTY_FOCAL_LENGTH_X        = 200,
-    LIPS_STREAM_PROPERTY_FOCAL_LENGTH_Y        = 201,
-    LIPS_STREAM_PROPERTY_PRINCIPAL_POINT_X     = 202,
-    LIPS_STREAM_PROPERTY_PRINCIPAL_POINT_Y     = 203,
-    LIPS_STREAM_PROPERTY_EXTRINSIC_TO_DEPTH    = 220,
-    LIPS_STREAM_PROPERTY_EXTRINSIC_TO_COLOR    = 221,
-    LIPS_STREAM_PROPERTY_RADIAL_DISTORTION     = 222,
-    LIPS_STREAM_PROPERTY_TANGENTIAL_DISTORTION = 223
-};
-
-typedef struct CameraExtrinsicMatrix
-{
-    float rotation[3][3];
-    float translation[3];
-} CameraExtrinsicMatrix;
-
-typedef struct RadialDistortionCoeffs
-{
-    double k1, k2, k3, k4, k5, k6;
-} RadialDistortionCoeffs;
-
-typedef struct TangentialDistortionCoeffs
-{
-    double p1, p2;
-} TangentialDistortionCoeffs;
 
 int main( int argc, char* argv[] )
 {
